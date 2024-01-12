@@ -10,7 +10,7 @@ class VendingMachine {
     fun insertCoin(d: Double) {
         when (d) {
             0.10 -> {
-                currentAmount =0.10
+                currentAmount +=0.10
             }
 
             0.25 -> {
