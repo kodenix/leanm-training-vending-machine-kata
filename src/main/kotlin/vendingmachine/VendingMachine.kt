@@ -17,8 +17,12 @@ class VendingMachine {
                 currentAmount +=0.25
             }
 
-            else -> {
+            0.05 -> {
                 currentAmount +=0.05
+            }
+
+            else -> {
+
             }
         }
 
