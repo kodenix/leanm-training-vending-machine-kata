@@ -19,4 +19,13 @@ class VendingMachineShould {
 
         assertEquals("$0.05", vendingMachine.display)
     }
+
+    @Test
+    fun `display dimes amount when a dime coin is inserted`() {
+        val vendingMachine = VendingMachine()
+
+        vendingMachine.insertCoin(0.10)
+
+        assertEquals("$0.10", vendingMachine.display)
+    }
 }
