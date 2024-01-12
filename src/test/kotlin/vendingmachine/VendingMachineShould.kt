@@ -66,5 +66,13 @@ class VendingMachineShould {
         assertEquals("$0.25", vendingMachine.display)
     }
 
+    @Test
+    fun `display updated amount when a quarter coin is inserted and there is already two coin inserted`() {
+        val vendingMachine = VendingMachine()
+        vendingMachine.insertCoin(0.25)
+        vendingMachine.insertCoin(0.25)
+        assertEquals("$0.50", vendingMachine.display)
+    }
+
     
 }
