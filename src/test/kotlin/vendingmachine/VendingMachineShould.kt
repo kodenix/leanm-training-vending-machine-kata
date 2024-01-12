@@ -8,6 +8,6 @@ class VendingMachineShould {
     fun `display insert coin when there is no coin inserted`() {
         val vendingMachine = VendingMachine()
 
-        assertEquals(vendingMachine.display, "INSERT COIN")
+        assertEquals("INSERT COIN", vendingMachine.display)
     }
 }
