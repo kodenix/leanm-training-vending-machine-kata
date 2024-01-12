@@ -22,7 +22,9 @@ class VendingMachine {
             }
         }
 
-        display = "$" + "%.2f".format(currentAmount)
+        display = getFormattedAmount(currentAmount)
     }
+
+    private fun getFormattedAmount(amount: Double) = "$" + "%.2f".format(amount)
 
 }
