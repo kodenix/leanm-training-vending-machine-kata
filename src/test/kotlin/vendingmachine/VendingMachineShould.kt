@@ -74,5 +74,15 @@ class VendingMachineShould {
         assertEquals("$0.50", vendingMachine.display)
     }
 
+    @Test
+    fun `display current amount in display when an invalid coin is inserted`() {
+        val vendingMachine = VendingMachine()
+        vendingMachine.insertCoin(0.25)
+        vendingMachine.insertCoin(0.01)
+
+        assertEquals("$0.25", vendingMachine.display)
+    }
+
+
     
 }
