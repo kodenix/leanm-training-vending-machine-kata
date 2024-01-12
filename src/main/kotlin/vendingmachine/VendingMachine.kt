@@ -1,5 +1,5 @@
 package vendingmachine
 
 class VendingMachine {
-    val display: String = ""
+    val display: String = "INSERT COIN"
 }
